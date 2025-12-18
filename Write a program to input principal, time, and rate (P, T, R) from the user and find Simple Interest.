@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int principle, time, rate;
+        System.out.print("Enter principle amount: ");
+        principle = in.nextInt();
+        System.out.print("Enter time duration: ");
+        time = in.nextInt();
+        System.out.print("Enter rate of interest: ");
+        rate = in.nextInt();
+
+        int simpleInterest = (principle * time * rate) / 100;
+        System.out.println("Simple Interst = " + simpleInterest);
+    }
+}
