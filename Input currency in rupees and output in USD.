@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int currency = in.nextInt();
+
+        double USD = currency * 0.011;
+        System.out.println(USD);
+        in.close();
+    }
+}
