@@ -1,1 +1,33 @@
+import java.util.Scanner;
 
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        System.out.print("Enter first number: ");
+        int firstNumber = in.nextInt();
+
+        System.out.print("Enter second number: ");
+        int secondNumber = in.nextInt();
+
+        System.out.print("Enter an operator: ");
+        char ch = in.next().charAt(0);
+
+        if(ch == '+'){
+            int sum = firstNumber + secondNumber;
+            System.out.println("Sum = " + sum);
+        }else if(ch == '-'){
+            int diff = firstNumber - secondNumber;
+            System.out.println("Difference = " + diff);
+        }else if(ch == '*'){
+            int mul = firstNumber * secondNumber;
+            System.out.println("Multiplication = " + mul);
+        }else if(ch == '/'){
+            int div = firstNumber / secondNumber;
+            System.out.println("Divison = " + div);
+        }else{
+            System.out.println("Enter valid operator");
+        }
+        in.close();
+    }
+}
