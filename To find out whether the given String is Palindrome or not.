@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        System.out.print("Enter string: ");
+        String str = in.next();
+
+        String reverseStr = reverse(str);
+
+        //checking either both string is equal or not
+        if(reverseStr.equals(str)){
+            System.out.println("Yes it is a palindrome string");
+        }else{
+            System.out.println("No it is not a palindrome string");
+        }
+
+        in.close();
+    }
+
+    //reverse the string
+    static String reverse(String s){
+        String str = "";
+        int end = s.length() - 1;
+
+        while (end >= 0) {
+            str += s.charAt(end);
+            end--;
+        }
+        return str;
+    }
+}
