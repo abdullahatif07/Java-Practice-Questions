@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+class Main{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        //taking input from the user
+        System.out.print("Enter first diagonal of Rhombus: ");
+        int d1 = sc.nextInt();
+
+        System.out.print("Enter second diagonal of Rhombus: ");
+        int d2 = sc.nextInt();
+
+        //calculating area of Rhombus
+        int area =  d1 * d2 / 2;
+
+        System.out.println("Area = " + area);
+        sc.close();
+    }
+}
