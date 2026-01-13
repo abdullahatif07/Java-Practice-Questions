@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+class Main{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        //taking input from the user
+        System.out.print("Enter the base area of the Pyramid: ");
+        int baseArea = sc.nextInt();
+
+        System.out.print("Enter the height of the Pyramid: ");
+        int height = sc.nextInt();
+
+        double volume = (baseArea * height) / 3.0;
+
+        System.out.println("Volume of the Pyramid = " + volume);
+        sc.close();
+    }
+}
