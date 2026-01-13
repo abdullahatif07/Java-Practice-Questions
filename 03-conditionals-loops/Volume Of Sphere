@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+class Main{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        //taking input from the user
+        System.out.print("Enter the radius of the Sphere: ");
+        int radius = sc.nextInt();
+
+        double volume = (4/3.0) * Math.PI * (radius*radius*radius);
+
+        System.out.println("Volume of the sphere = " + volume);
+        sc.close();
+    }
+}
