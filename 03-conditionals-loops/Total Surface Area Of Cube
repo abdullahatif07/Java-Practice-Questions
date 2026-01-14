@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+class Main{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        //taking input from the user
+        System.out.print("Enter the length of the edge of the cube: ");
+        int edge = sc.nextInt();
+        
+        int surfaceArea = 6 * (edge * edge);
+
+        System.out.println("Total Surface Area Of Cube = " + surfaceArea);
+        sc.close();
+    }
+}
