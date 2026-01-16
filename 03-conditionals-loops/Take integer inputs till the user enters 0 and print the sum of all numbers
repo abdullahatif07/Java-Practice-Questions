@@ -10,10 +10,10 @@ class Main{
         while(num != 0){
             System.out.print("Enter number: ");
             num = sc.nextInt();
-            ans = Math.max(num, ans);
+            ans += num;
         }
 
-        System.out.println("Maximum number you entered was: " + ans);
+        System.out.println("Sum of all number you entered is: " + ans);
         sc.close();
     }
 }
